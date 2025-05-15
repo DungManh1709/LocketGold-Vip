@@ -1,0 +1,10 @@
+[General]
+name = Locket Debug Logger
+author = ChatGPT
+description = Ghi lại toàn bộ request từ app Locket để xác định API bật huy hiệu
+
+[Script]
+http-request ^https?:\/\/.*locket.* script-path=https://raw.githubusercontent.com/DungManh1709/LocketGold-Vip/main/logger.js, requires-body=true, timeout=10, tag=Locket Request Logger
+
+[MITM]
+hostname = *.locket.*
