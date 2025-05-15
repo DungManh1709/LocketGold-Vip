@@ -1,0 +1,11 @@
+[General]
+name = Locket Gold VIP
+badge = VIP
+author = Ohoang7
+description = Kích hoạt tính năng VIP Locket + hiển thị huy hiệu
+
+[Script]
+http-request ^https:\/\/api\.locket\.app\/ script-path=https://raw.githubusercontent.com/DungManh1709/LocketGold-Vip/main/Locket_Ohoang7.js, requires-body=true, timeout=10, tag=Locket VIP
+
+[MITM]
+hostname = api.locket.app
