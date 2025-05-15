@@ -1,0 +1,10 @@
+#!name=Locket-Ohoang7_Gold
+#!desc=Crack By Ohoang7 | Huy hiệu: locketgold | Unlock full premium
+
+[Script]
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/DungManh1709/locket-gold/main/Locket_Ohoang7.js, requires-body=true, max-size=-1, timeout=60
+
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/DungManh1709/locket-gold/main/deleteHeader.js, timeout=60
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com
